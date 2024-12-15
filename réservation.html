@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - NewSaigon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo NewSaigon">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Réservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Réserver une table</h1>
+        <form action="#" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="date">Date :</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Heure :</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Nombre de personnes :</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <fieldset>
+                <legend>Préférences alimentaires :</legend>
+                <label><input type="radio" name="preference" value="vegetarien"> Végétarien</label>
+                <label><input type="radio" name="preference" value="non-vegetarien"> Non-végétarien</label>
+            </fieldset>
+
+            <label><input type="checkbox" name="newsletter"> Je souhaite recevoir la newsletter</label>
+
+            <button type="submit">Réserver</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 NewSaigon. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
